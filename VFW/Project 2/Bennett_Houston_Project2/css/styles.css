@@ -1,0 +1,74 @@
+body{
+    font-family: Arial, Helvetica,sans-serif;
+    width: 570px;
+    margin: auto;
+    padding: 10px;
+    text-transform: uppercase;
+    background: #808080;
+
+}
+
+a{
+    margin: 25px;
+
+}
+
+#SubmitBtn{
+    font-size: 16pt;
+    margin: 10px 200px 10px 200px;
+    text-align: center;
+    text-decoration: underline;
+    width:150px;
+    height: 35px;
+    background-color: #00008b;
+    color: white;
+}
+
+#attributes{
+
+    display:block;
+    width: 75px;
+
+}
+/**
+#content{
+    width: 570px;
+    height: 690px;
+
+}
+*/
+h1{
+    text-align: center;
+    border: 10px solid black;
+    color: #00008b;
+
+
+}
+
+nav{
+    text-align: center;
+    outline: dotted red;
+}
+
+label{
+    text-transform: capitalize;
+
+}
+legend{
+    font-size: 20px;
+    text-decoration: underline;
+}
+textarea{
+    width:400px;
+}
+
+.hasFocus{
+
+    border: 2px dotted red;
+}
+.lostFocus{
+    border: 0px;
+}
+
+
+

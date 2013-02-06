@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Houston Bennett -->
+<!-- Project 2 d20 Inspired Character creator -->
+<!-- Term 0113 -->
+<html>
+<!-- Document Header -->
+<head>
+
+    <!-- Meta content gives the browser some information about our document -->
+    <meta charset="utf-8" />
+    <meta name="description" content="My very first HTML5 Project! How exciting!"/>
+    <meta name="keywords" content="d20, char, character, creator" />
+
+    <!-- Allows search engine robots to index our page in a search engine and follow
+    (continue reading through) links on our page. -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- This next bit does the opposite. This will not allow search engines access or follow links -->
+    <meta name="robots" content="noindex, nofollow"/>
+
+    <!-- Allows our content to size correctly to an iPhone display -->
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
+
+    <!-- Allows content to size correctly for droids too. -->
+    <meta name="viewport" content="target-densitydpi=device-dpi" />
+
+    <!-- For other phones or old feature phones that don't support the "viewport"
+     HandheldFriendly is interpreted by mobiles browsers and spiders as an indicator
+    of mobile markup and a directive to display without scaling-->
+    <meta name="HandheldFriendly" content="True">
+
+    <!-- MobileOptimized: Mobile Browsers and mobile search engine spiders also use this META tag to indentify
+    mobile-optimized HTML -->
+    <meta name="MobileOptimized" content="320" />
+
+    <!--Document Title -->
+    <title>Houston's d20 Inspired Character Creator: Add a Character</title>
+
+    <!-- Import CSS Styles -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<!-- Document Body -->
+<content>
+<body>
+    <h1>Add a Character</h1>
+
+<div id="content">
+
+    <form action="#" method="post" id="charForm">
+
+        <!-- Basic Character Info. -->
+        <fieldset>
+
+            <legend>Basic Info</legend>
+            <ul>
+                <li><label for="charCreateDate">Creation Date: </label><input type="date" id="charCreateDate"/></li>
+                <li><label for="charName" >Character Name: </label><input type="text" id="charName" /> </li>
+                <li><label for="charRace">Race:  </label><input type="text" id="charRace" /> </li>
+                <li id="dropdown"><label for="dropdown">Size: </label></li>
+                <li><label for="charAge">Age: </label><input type="range" id="charAge" /> </li>
+                <li>Gender:
+                    <ul>
+                        <li><input type="radio" checked value="Male" id="male" name="sex"/><label for="male"> Male</label> </li>
+                        <li><input type="radio"  value="Female" id="female" name="sex"/><label for="female"> Female</label> </li>
+                        <li><input type="radio"  value="Other" id="other" name="sex"/><label for="other"> Other</label> </li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
+
+        <!-- Character Attributes -->
+
+        <fieldset>
+            <legend>Attributes</legend>
+            <ul id="attributes">
+
+                <li><label for="charStr">Strength: </label><input type="text" id="charStr" name="textbox"/> </li>
+                <li><label for="charCon">Constitution:  </label><input type="text" id="charCon" name="textbox"/> </li>
+                <li><label for="charDex">Dexterity:  </label><input type="text" id="charDex" name="textbox"/> </li>
+                <li><label for="charInt">Intelligence:  </label><input type="text" id="charInt" name="textbox"/> </li>
+                <li><label for="charWis">Wisdom:  </label><input type="text" id="charWis" name="textbox"/> </li>
+                <li><label for="charCha">Charisma:  </label><input type="text" id="charCha" name="textbox"/> </li>
+
+            </ul>
+
+        </fieldset>
+
+        <!-- Additional Char Info -->
+        <fieldset>
+            <legend>Biography</legend>
+            <textarea placeholder="Enter your character's back story here!" id="charBio"></textarea>
+
+        </fieldset>
+
+    </form>
+<!-- Links at the bottom -->
+    <footer>
+        <input type="button" id="SubmitBtn" name="SubmitBtn" value="Submit"/>
+
+        <nav>
+            <a href="#" id="DeleteAll">Delete ALL Characters</a>
+            <a href="#" id="ViewAll">View Stored Characters</a>
+            <a href='addItem.html' id="NewChar" style='display: none'>Add Another Character</a>
+        </nav>
+    </footer>
+<input type="hidden" value="This will be a random number later." />
+</div>
+
+
+</body>
+</content>
+<!-- Call JavaScript file -->
+<script src="js/main.js" type="text/javascript"></script>
+</html>
